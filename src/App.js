@@ -63,14 +63,14 @@ function App() {
     })
   }
 
-  // Edit data function
+  // Edit data function 
   const editData = async (id, name) => {
     setName(name);
     setID(id);
     console.log(id)
    }
 
-  // Update data function
+  // Update data function 
   const updateData = async () => {
 
     const updateData = await client.patch(id).set({name: name}).commit();
